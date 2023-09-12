@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgb(185, 185, 185);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(107, 100, 100);
+    display: flex;
+}
+
+.userImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.userImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu {
+    background-color: rgb(21, 27, 63);
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    position: sticky;
+    top: 0;
+}
+
+.menu:hover {
+    width: 250px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+
+ul li a:hover,
+.active,
+section .box:hover,
+td:hover {
+    background-color: black;
+}
+
+.logOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logOut a {
+    background-color: rgb(107, 100, 100);
+}
+
+ul li a i {
+    color: rgb(187, 28, 28);
+    font-size: 30px;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+header,
+footer {
+    background-color: rgb(21, 27, 63);
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section .box {
+    background-color: rgb(187, 28, 28);
+    flex-basis: 150px;
+    height: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section .box i {
+    font-size: 40px;
+}
+
+section .box .data span {
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td,
+th {
+    background-color: rgb(187, 28, 28);
+    border-radius: 8px;
+    height: 40px;
+}
+
+th {
+    background-color: rgb(21, 27, 63);
+}
+
+.price,
+.count {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.price {
+    background-color: chartreuse;
+    color: black;
+    border-radius: 6px;
+}
+
+.count {
+    background-color: darkcyan;
+    color: black;
+    border-radius: 6px;
+}
